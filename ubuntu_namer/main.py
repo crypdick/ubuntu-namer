@@ -42,7 +42,6 @@ def generate_name(
 
     Args:
         letter: a letter to use for the first letter of the name. If none is given, a random letter is used.
-        print_version: prints the version of the ubuntu-namer package.
 
     Returns:
         A random Ubuntu name
