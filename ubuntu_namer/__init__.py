@@ -1,7 +1,6 @@
 # type: ignore[attr-defined]
 """Awesome `ubuntu-namer` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"""
 
-import sys
 from importlib import metadata as importlib_metadata
 
 
