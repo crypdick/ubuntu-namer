@@ -41,9 +41,13 @@ def generate_name(
 
     Args:
         letter: a letter to use for the first letter of the name. If none is given, a random letter is used.
+        print_version: prints the version of the ubuntu-namer package.
 
     Returns:
         A random Ubuntu name
+
+    Raises:
+        ValueError: if letter is not a single letter
 
     Examples:
         .. code:: python
@@ -71,15 +75,6 @@ def generate_name(
     console.print(f"[bold red]{ubuntu_name}[/]")
 
     return ubuntu_name
-
-
-# def main(
-#     letter: str = typer.Option(..., help="The first letter of the name"),
-# ) -> None:
-#     """Print a greeting with a giving name."""
-#     ubuntu_name = generate_name(letter)
-#
-#     console.print(ubuntu_name)
 
 
 if __name__ == "__main__":
