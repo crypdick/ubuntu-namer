@@ -2,7 +2,7 @@ import string
 
 import pytest
 
-from ubuntu_namer.main import generate_name
+from ubuntu_namer import generate_name
 
 
 def test_no_letter():

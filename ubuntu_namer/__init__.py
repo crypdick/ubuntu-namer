@@ -1,6 +1,9 @@
 # type: ignore[attr-defined]
 """Awesome `ubuntu-namer` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"""
 
+from .main import generate_name
+from .names import ubuntu_names
+
 # from importlib import metadata as importlib_metadata
 #
 #

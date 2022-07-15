@@ -18,10 +18,6 @@ Awesome `ubuntu-namer` is a Python cli/package created with https://github.com/T
 </div>
 
 
-### Set up bots
-
-- Set up [Dependabot](https://docs.github.com/en/github/administering-a-repository/enabling-and-disabling-version-updates#enabling-github-dependabot-version-updates) to ensure you have the latest dependencies.
-- Set up [Stale bot](https://github.com/apps/stale) for automatic issue closing.
 
 ### Poetry
 
