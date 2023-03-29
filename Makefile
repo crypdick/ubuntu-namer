@@ -113,6 +113,8 @@ build-remove:
 cleanup: pycache-remove dsstore-remove mypycache-remove ipynbcheckpoints-remove pytestcache-remove
 
 build-lambda:
+	# clean up any previous builds
+	rm -rf ./lambda ./lambda.zip
 	@echo Building lambda ...
 	poetry lock -n && poetry export --without-hashes > requirements.txt
 	poetry run pip install -r requirements.txt -t ./lambda
@@ -120,6 +122,8 @@ build-lambda:
 	# move the lambda handler to the root of the lambda folder
 	mv ./lambda/ubuntu_namer/lambda_function.py ./lambda
 	@echo Building lambda zip
-	zip -r ./lambda.zip ./lambda
+	# gotcha: the contents of the archive must be in the root of the zip, not nested under a `lambda` folder
+	# thus, we cd into the folder first
+	cd ./lambda && zip -r ../lambda.zip ./* && cd ..
 	@echo Cleaning up ...
 	rm -rf ./lambda
