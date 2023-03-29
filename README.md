@@ -197,6 +197,8 @@ make docker-remove
 
 More information [about docker](https://github.com/crypdick/ubuntu-namer/tree/master/docker).
 
+
+
 </p>
 </details>
 
@@ -235,6 +237,18 @@ make cleanup
 
 </p>
 </details>
+
+<details>
+<summary>10. AWS Lambda</summary>
+<p>
+
+To make a zip file for AWS Lambda run:
+
+```bash
+make lambda-build
+```
+
+Then, upload this zip to AWS Lambda.
 
 ## 📈 Releases
 

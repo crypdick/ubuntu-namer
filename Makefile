@@ -111,3 +111,15 @@ build-remove:
 
 .PHONY: cleanup
 cleanup: pycache-remove dsstore-remove mypycache-remove ipynbcheckpoints-remove pytestcache-remove
+
+build-lambda:
+	@echo Building lambda ...
+	poetry lock -n && poetry export --without-hashes > requirements.txt
+	poetry run pip install -r requirements.txt -t ./lambda
+	cp -r ./ubuntu_namer ./lambda
+	# move the lambda handler to the root of the lambda folder
+	mv ./lambda/ubuntu_namer/lambda_function.py ./lambda
+	@echo Building lambda zip
+	zip -r ./lambda.zip ./lambda
+	@echo Cleaning up ...
+	rm -rf ./lambda
