@@ -72,7 +72,7 @@ def generate_name(
     adjective = random.choice(ubuntu_names[letter]["adjectives"])
     animals = random.choice(ubuntu_names[letter]["animals"])
 
-    ubuntu_name = f"{adjective} {animals}"
+    ubuntu_name = f"{adjective} {animals}".strip().title()
 
     console.print(f"[bold red]{ubuntu_name}[/]")
 
