@@ -26,3 +26,11 @@ Building a new version of the application contains steps:
 - Make a commit to `GitHub`.
 - Create a `GitHub release`.
 - And... publish 🙂 `poetry publish --build`
+
+
+### Updating Lambda
+
+To update the Lambda function, you need to:
+
+- Build the package `make build-lambda`
+- Upload the zip file to AWS Lambda

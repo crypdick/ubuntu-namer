@@ -245,7 +245,7 @@ make cleanup
 To make a zip file for AWS Lambda run:
 
 ```bash
-make lambda-build
+make build-lambda
 ```
 
 Then, upload this zip to AWS Lambda.
