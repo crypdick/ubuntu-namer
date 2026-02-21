@@ -1,7 +1,7 @@
 [project]
 name = "ubuntu-namer"
-version = "0.3.1"
-description = "Python port of ubuntu-name-generator"
+version = "1.0.0"
+description = "Generate random Ubuntu-style codenames like Agile Amoeba"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.13"
@@ -9,7 +9,7 @@ authors = [
     { name = "Richard Decal" },
 ]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
